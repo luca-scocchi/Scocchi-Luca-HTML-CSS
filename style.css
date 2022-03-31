@@ -1,0 +1,283 @@
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{font-family: 'Inter', sans-serif;font-size: 25px;}
+
+a{text-decoration: none;}
+
+h1, h3, h4, h5, p{color:#000; padding-bottom: 30px;}
+h2{color:#174C4F; padding-bottom: 30px;}
+h3{font-size: 40px;font-weight: bold;}
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;font-weight: 600;}
+.normal-text{font-size: 28px;}
+.small-text{font-size: 18px;}
+.strong{font-weight: 800;}
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+
+.button-1{padding: 18px 28px; background: #174C4F; color:#fff; display: inline-block;border-radius: 4px; align-items: center; display: flex;
+}
+.button-2{padding: 18px 28px; background: #174C4F; color:#fff; display: inline-block;border-radius: 4px;
+}
+/* ! myself */
+
+.header{
+  width: 100%;
+  position: relative;
+  background: #000;
+  top:0;
+left:0;
+  padding: 30px;
+display: flex;
+
+
+}
+
+.logo{
+
+}
+
+.menu{
+
+  width: 100%;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: #fff;padding: 15px;display: block;}
+
+
+
+.cta{
+position: relative;
+right: 40px;
+}
+
+/* ! Hero */
+
+.hero{
+
+display: flex; width: 100%; align-items: center;
+  background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0, 0.9)),
+  url('images/imagine prova.png') no-repeat center center;
+  background-size: cover;
+
+  height:100vh;
+
+
+}
+
+.hero__content{
+
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .hero__content h1,
+  .hero__content p{color: #fff;}
+
+/* ! myself */
+
+.container{
+  display: flex;
+  position: relative;
+  padding-top: 100px;
+  justify-content: space-around;
+}
+.myself-text{width:45%;
+ box-shadow:7px 7px 5px #a3a0a1;
+ background-color:#ffffff;
+ vertical-align:middle;
+ text-align:center;
+padding:30px;
+ border:4px solid #174C4F;}
+
+
+
+
+/* ! portfolio */
+
+
+
+
+.container-2{
+
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+text-align: center;
+
+
+}
+
+.subtitle-2{
+  position:relative; display:flex; justify-content: center; padding-top: 100px; padding-bottom: 40px;
+}
+
+ .photo-grid-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.photo-grid-item {
+  border: 4px solid  #174C4F;
+  width: 200px;
+  height: 200px;
+   box-shadow:40px 40px 10px #a3a0a1
+}
+
+
+
+
+.container-3{
+  text-align: center;
+}
+
+.subtitle-3{
+   padding-top: 100px; padding-bottom: 40px;
+}
+
+.container__contents{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.footer{background:#333; padding-top:40px; color:#000; margin-top:20px; width:100%;
+
+}
+
+@media (max-width: 768px) {
+
+  .cta{display: none;}
+  .intro-text{display: none;}
+.hero__content{width:100vh;
+
+padding: 0px;}
+.h1{font-size:50px;}
+.container{max-width: 300px; display: flex; flex-direction: column;justify-content: center; align-items: center;text-align: center;}
+.myself-text{width:90%;
+ box-shadow:7px 7px 5px #a3a0a1; justify-content: center;}
+
+.container-2{max-width: 300px; justify-content: center; text-align:center; }
+.photo-grid-container{
+
+ flex-direction: column;
+ padding-top: 0;
+ padding-bottom:0;
+ justify-content: center;
+}
+.photo-grid{
+flex-direction: column;
+justify-content: center;}
+.photo-grid-item {
+
+   box-shadow:none;
+}
+
+.container-3{
+  display:flex;
+flex-direction: column;
+max-width: 300px;
+justify-content: space-around;
+}
+.info-text{
+  justify-content:center;
+}
+.container__contents{
+  display: flex;
+  flex-direction: column;
+}
+
+.img{
+  max-width: 100%; margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
