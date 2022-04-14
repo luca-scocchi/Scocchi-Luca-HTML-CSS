@@ -161,10 +161,87 @@ text-align: center;
   display:flex;
   justify-content: space-around;
 }
+.speaker-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  width: 100%;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text']
+.form-row input[type='email']{
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #999999;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.form-row button {
+  align-items: center;
+
+padding: 18px 28px; background: #174C4F; color:#fff;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+  text-align: center;
+ border: 2px solid #5D6063;
+
+ width: 150px;
+ margin: 20px auto;
+}
+
+.form-row button:hover {
+  background-color: #76AEED;
+}
+
+.form-row button:active {
+  background-color: #407FC7;
+}
+
 
 
 .footer{background:#333; padding-top:40px; color:#000; margin-top:20px; width:100%;
-
 }
 
 @media (max-width: 768px) {
@@ -186,10 +263,10 @@ padding: 0px;}
 .myself-text{width:90%;
  box-shadow:7px 7px 5px #a3a0a1; justify-content: center;}
 
-.container-2{max-width: 768px;}
+.container-2{max-width: 768px; display: flex; flex-direction: column;justify-content: center; align-items: center;
+  }
 .photo-grid-container{
 
- flex-direction: column;
  padding-top: 0;
  padding-bottom:0;
 
@@ -197,6 +274,9 @@ padding: 0px;}
 .photo-grid{
   margin: 0 auto;
 flex-direction: column;
+display: flex;
+position: relative; left:353px;
+
 }
 .photo-grid-item {
 
@@ -224,7 +304,40 @@ justify-content: center;
 }
 .big-text{font-size:50px;font-weight: 800;}
 
+@media only screen and (min-width: 768px) {
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type='text']
+  .form-row input[type='email'],
+ .form-row select,
+ .form-row textarea {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row .instructions {
+    margin-left: 120px;
+  }
 
+  .form-row button {
+      margin-left: 120px;
+    }
+
+
+
+}
 
 
 

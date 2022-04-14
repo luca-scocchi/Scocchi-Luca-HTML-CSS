@@ -15,6 +15,15 @@
 
  <link rel="icon" type="image/png" href="images/logo.png">
 
+<script src= "script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("wDvU-xRrzhNA1TkMn");
+})();
+</script>
+
+
 </head>
 <body>
 
@@ -96,12 +105,31 @@ I consider the development of a website an art, I hope to become a great artist.
 <div> <img src="images/telefono.png"  width='390px/'> </div>
 <div class=contact-text>
   <p class="normal-text" > Contact me to find out more about me and my future projects.</p>
-  <div> <img src="images/logo-facebook.png" width='60' /> </div> <p> <a href='https://www.facebook.com/luca.scocchi.5/'/> Luca Scocchi </p>
-<div> <img src="images/logo-gmail.png" width='60' /> </div> <p> <a href='https://www.google.com/intl/it/gmail/about/' /> lscocchi@gmail.com </p>
-<div> <img src="images/logo-instagram.png" width='60' /> </div>  <p> <a href='https://www.instagram.com/luca_scocchi'/> luca_scocchi </p>
+  <div> <img src="images/logo-facebook.png" width='60' /> </div> <p> <a href='https://www.facebook.com/luca.scocchi.5/'/> Luca Scocchi </p></a>
 
+<div> <img src="images/logo-instagram.png" width='60' /> </div>  <p> <a href='https://www.instagram.com/luca_scocchi'/> luca_scocchi </p> </a>
+<div> <img src="images/logo-gmail.png" width='60' /> </div> <form action='' method='get' class='speaker-form'><div class='form-row'>
+  <label for='full-name'>Name</label>
+  <input id='full-name' name='full-name' type='text'/>
 </div>
 
+<div class='form-row'>
+  <label for='email'>Email</label>
+  <input id='email'
+         name='email'
+         type='email'
+         placeholder='joe@example.com'/>
+</div>
+<div class='form-row'>
+  <label for='abstract'>message</label>
+  <textarea id='abstract' name='abstract'></textarea>
+  <div class='instructions'>...</div>
+</div>
+<div class='form-row'>
+  <button onclick="sendmail()">Submit</button>
+</div>
+</form>
+</div>
 </section>
 </sections>
 
