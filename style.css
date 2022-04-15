@@ -169,6 +169,7 @@ text-align: center;
   width: 100%;
   padding: 50px;
   margin: 0 0 40px 0;
+  box-shadow:7px 7px 5px #a3a0a1;
 }
 .form-row {
   margin-bottom: 40px;
